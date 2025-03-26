@@ -125,7 +125,7 @@ def main():
         # folder indexes
         folders = ["enums", "packets", "types"]
         for folder in folders:
-            base = "../" * (folder.count("/") + branch_name.count("/"))
+            base = "../" * (branch_name.count("/")+2)
             filenames = [a for a in os.listdir(os.path.join(output_dir, folder)) if a.endswith(".html")]
             with open(os.path.join(output_dir, folder, "index.html"), "w") as f:
                 title = f"{branch_name} {folder}"
@@ -134,7 +134,7 @@ def main():
                     name = filename.split(".")[0]
                     content += f"<li><a href=\"{filename}\">{name}</a></li>\n"
                 content += "</ul>"
-                f.write(with_layout(title, "../../", content))
+                f.write(with_layout(title, base, content))
 
         # branch index
         with open(os.path.join(output_dir, "index.html"), "w") as f:
