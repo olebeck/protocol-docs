@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PlayerInputPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../main.css'>
+</head>
+<body>
+    <h1 id="playerinputpacket">PlayerInputPacket</h1>
+<p><strong>ID: 57</strong></p>
+<p>Sent only to the server when using legacy client authoritative movement, see ServerAuthMovementMode documentation. This is sent every tick along with MovePlayerPacket when the client is in control of a vehicle.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Move</td><td><a href="../types/Vec2.html">Vec2</a></td></tr>
+<tr><td>Jumping</td><td><table><tbody><tr><td>bool</td><td>True if the player is holding down the jump input or is auto-jumping.
+  In server authoritative movement this is equivalent to `PlayerAuthInputPacket::InputData::Jumping` bit.</td></tr></tbody></table></td></tr>
+<tr><td>Sneaking</td><td><table><tbody><tr><td>bool</td><td>This is either the predicted sneak state as determined by sneak input or the latest value received from `SetActorDataPacket` depending on timing.
+  In server authoritative movement the closest equivalent is `PlayerAuthInputPacket::InputData::Sneaking` and does not have the timing issue.</td></tr></tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

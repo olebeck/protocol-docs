@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MapInfoRequestPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="mapinforequestpacket">MapInfoRequestPacket</h1>
+<p><strong>ID: 68</strong></p>
+<p>In the case of the client being unable to find map data for a map item it sends a uuid for a map to the server.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Map Unique ID</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+<tr><td>Dependency on 'mClientPixels.size() > 0 ?'</td><td><b>if (1)</b><br>
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Client Pixels List</td><td><b>Client Pixels List Size:</b> unsigned int
+    These are sent from the client to tell the Server map about terrain pixels it doesn't know about  
+    <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+    <tr><td>pixel</td><td>unsigned int</td></tr>
+    <tr><td>index</td><td>unsigned short</td></tr>
+    </tbody></table></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

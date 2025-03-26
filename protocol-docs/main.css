@@ -1,0 +1,64 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Link Styles */
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Table within Table Styles */
+  table table {
+    width: 90%;
+    margin: 10px auto;
+    border: none;
+  }
+  
+  table table th, table table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  table table th {
+    background-color: #e9ecef;
+  }
+  
+  /* Bold Field Names */
+  b {
+    font-weight: bold;
+  }
+  
+  /* Additional Spacing for HR */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EmoteListPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../main.css'>
+</head>
+<body>
+    <h1 id="emotelistpacket">EmoteListPacket</h1>
+<p><strong>ID: 152</strong></p>
+<p>Allows clients to download emotes that other clients have equipped.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Runtime id</td><td><a href="../types/ActorRuntimeID.html">ActorRuntimeID</a></td></tr>
+<tr><td>Emote piece ids</td><td><b>List Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Piece id</td><td><a href="../types/mce_UUID.html">mce::UUID</a></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

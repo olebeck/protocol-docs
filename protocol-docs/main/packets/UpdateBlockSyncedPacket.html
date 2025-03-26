@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UpdateBlockSyncedPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../main.css'>
+</head>
+<body>
+    <h1 id="updateblocksyncedpacket">UpdateBlockSyncedPacket</h1>
+<p><strong>ID: 110</strong></p>
+<p>Used to sync moving blocks with clients so they render correctlyVariation of UpdateBlockPacket that includes information to sync entities with renderchunk generation.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Block Position</td><td><a href="../types/NetworkBlockPosition.html">NetworkBlockPosition</a></td></tr>
+<tr><td>Block Runtime ID</td><td>unsigned varint</td></tr>
+<tr><td>Flags</td><td>unsigned varint</td></tr>
+<tr><td>Layer</td><td>unsigned varint</td></tr>
+<tr><td>Unique Actor Id</td><td><table><tbody><tr><td>unsigned varint64</td><td>Id for the Moving Block Actor</td></tr></tbody></table></td></tr>
+<tr><td>Actor Sync Message</td><td>unsigned varint64</td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SubChunkRequestPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="subchunkrequestpacket">SubChunkRequestPacket</h1>
+<p><strong>ID: 175</strong></p>
+<p>Sent from the client to the server representing a batch of subchunks that the client requests from the server</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Dimension Type</td><td>varint</td></tr>
+<tr><td>Center Pos</td><td><a href="../types/SubChunkPos.html">SubChunkPos</a></td></tr>
+<tr><td>Request Count</td><td>unsigned int</td></tr>
+<tr><td>SubChunk Pos Offset List</td><td><table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>SubChunk Offset Pos</td><td><a href="../types/SubChunkPacket_SubChunkPosOffset.html">SubChunkPacket::SubChunkPosOffset</a></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

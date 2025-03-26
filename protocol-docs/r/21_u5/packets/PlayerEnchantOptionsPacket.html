@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PlayerEnchantOptionsPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="playerenchantoptionspacket">PlayerEnchantOptionsPacket</h1>
+<p><strong>ID: 146</strong></p>
+<p>This packet is sent from the server whenever a player rerolls a new set of enchantment options from the enchantment table</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Options</td><td><b>List Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Cost</td><td>unsigned varint</td></tr>
+  <tr><td>Enchants</td><td><a href="../types/ItemEnchants.html">ItemEnchants</a></td></tr>
+  <tr><td>Enchant Name</td><td>string</td></tr>
+  <tr><td>Enchant Net Id</td><td><a href="../types/TypedServerNetId_RecipeNetIdTag.html">TypedServerNetId&lt;struct RecipeNetIdTag,unsigned int,0&gt;</a></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

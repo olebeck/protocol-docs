@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MovementEffectPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="movementeffectpacket">MovementEffectPacket</h1>
+<p><strong>ID: 318</strong></p>
+<p>These packets are sent to the client to update specific MovementEffects. These MovementEffects can be client-predicted. Ex: Fireworks Rockets used while gliding send this packet to the client so they know the exact duration of the GLIDE_BOOST MovementEffect.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Target Runtime ID</td><td><a href="../types/ActorRuntimeID.html">ActorRuntimeID</a></td></tr>
+<tr><td>Effect ID</td><td>varint</td></tr>
+<tr><td>Effect Duration</td><td>varint</td></tr>
+<tr><td>Tick</td><td><a href="../types/PlayerInputTick.html">PlayerInputTick</a></td></tr>
+</tbody></table>
+</body>
+</html>

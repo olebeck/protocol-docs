@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>RequestPermissionsPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="requestpermissionspacket">RequestPermissionsPacket</h1>
+<p><strong>ID: 185</strong></p>
+<p>Sent from client to server. Used to request a new Permissions Levels. Can only be used by Operators or Hosts.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Target Player Id's Raw ID</td><td><table><tbody><tr><td>int64</td><td>mTargetPlayerId is a ActorUniqueID</td></tr></tbody></table></td></tr>
+<tr><td>Player Permission Level</td><td><table><tbody><tr><td>byte</td><td><a href="../enums/PlayerPermissionLevel.html">PlayerPermissionLevel</a></td></tr></tbody></table></td></tr>
+<tr><td>Custom Permission Flags</td><td>unsigned short</td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,3 @@
+[submodule "ProtocolParser"]
+	path = ProtocolParser
+	url = https://github.com/CloudburstMC/ProtocolParser

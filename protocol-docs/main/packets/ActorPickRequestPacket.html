@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ActorPickRequestPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../main.css'>
+</head>
+<body>
+    <h1 id="actorpickrequestpacket">ActorPickRequestPacket</h1>
+<p><strong>ID: 35</strong></p>
+<p>Player clicks on an actor in the world, eg a chicken.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Actor ID</td><td><table><tbody><tr><td>int64</td><td>Target Actor ID</td></tr></tbody></table></td></tr>
+<tr><td>Max Slots</td><td><table><tbody><tr><td>byte</td><td>number of empty hotbar slots (to decide whether to overwrite a slot or add it to an empty one)</td></tr></tbody></table></td></tr>
+<tr><td>With Data</td><td><table><tbody><tr><td>bool</td><td>whether we want to store the NBT data along with the item</td></tr></tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

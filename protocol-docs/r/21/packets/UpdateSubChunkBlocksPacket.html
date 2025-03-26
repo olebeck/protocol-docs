@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UpdateSubChunkBlocksPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="updatesubchunkblockspacket">UpdateSubChunkBlocksPacket</h1>
+<p><strong>ID: 172</strong></p>
+<p>Packet sent for every set of blocks changed in a sub chunk every tick.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Sub Chunk Block Position</td><td><a href="../types/NetworkBlockPosition.html">NetworkBlockPosition</a></td></tr>
+<tr><td>Blocks Changed - Standards</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Pos</td><td><a href="../types/NetworkBlockPosition.html">NetworkBlockPosition</a></td></tr>
+  <tr><td>Runtime Id</td><td>unsigned varint</td></tr>
+  <tr><td>Update Flags</td><td>unsigned varint</td></tr>
+  <tr><td>Sync Message - Entity Unique ID</td><td>unsigned varint64</td></tr>
+  <tr><td>Sync Message - Message</td><td>unsigned varint</td></tr>
+  </tbody></table></td></tr>
+<tr><td>Blocks Changed - Extras</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Pos</td><td><a href="../types/NetworkBlockPosition.html">NetworkBlockPosition</a></td></tr>
+  <tr><td>Runtime Id</td><td>unsigned varint</td></tr>
+  <tr><td>Update Flags</td><td>unsigned varint</td></tr>
+  <tr><td>Sync Message - Entity Unique ID</td><td>unsigned varint64</td></tr>
+  <tr><td>Sync Message - Message</td><td>unsigned varint</td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

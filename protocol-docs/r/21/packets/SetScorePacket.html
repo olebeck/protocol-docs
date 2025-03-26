@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SetScorePacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="setscorepacket">SetScorePacket</h1>
+<p><strong>ID: 108</strong></p>
+<p>This packet is used to set the scoreboard which is used for 3rd party content.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Score Packet Type</td><td>byte</td></tr>
+<tr><td>Score Packet Info</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Id</td><td><a href="../types/ScoreboardId.html">ScoreboardId</a></td></tr>
+  <tr><td>Objective Name</td><td>string</td></tr>
+  <tr><td>Score Value</td><td>int</td></tr>
+  <tr><td>Dependency on 'Is Change Type'</td><td><b>if (1)</b><br>
+    <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+    <tr><td>Identity Definition Type</td><td>byte</td></tr>
+    <tr><td>Dependency on 'Identity Definition Type'</td><td><b>if (1)</b><br>
+      <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+      <tr><td>Player Unique Id</td><td>varint64</td></tr>
+      </tbody></table><hr>
+      <b>if (2)</b><br>
+      <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+      <tr><td>Actor Id</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+      </tbody></table><hr>
+      <b>if (3)</b><br>
+      <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+      <tr><td>Fake Player Name</td><td>string</td></tr>
+      </tbody></table></td></tr>
+    </tbody></table></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

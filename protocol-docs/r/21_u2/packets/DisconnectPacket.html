@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DisconnectPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="disconnectpacket">DisconnectPacket</h1>
+<p><strong>ID: 5</strong></p>
+<p>Sent from server. It is not fired if you are in a singleplayer game and you leave, but it is fired when there are split-screen clients.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Reason</td><td>varint</td></tr>
+<tr><td>Skip Message</td><td>bool</td></tr>
+<tr><td>Dependency on 'Skip Message'</td><td><b>if (0)</b><br>
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Message</td><td>string</td></tr>
+  <tr><td>Filtered Message</td><td>string</td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ResourcePackDataInfoPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="resourcepackdatainfopacket">ResourcePackDataInfoPacket</h1>
+<p><strong>ID: 82</strong></p>
+<p>Sent from the serverFileChunkUploader during the initialization of the file uploader. This packet is sent to the primary client.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Resource Name</td><td>string</td></tr>
+<tr><td>Chunk Size</td><td>unsigned int</td></tr>
+<tr><td>Number of Chunks</td><td>unsigned int</td></tr>
+<tr><td>File Size</td><td>unsigned int64</td></tr>
+<tr><td>File Hash</td><td>string</td></tr>
+<tr><td>Is Premium Pack</td><td><table><tbody><tr><td>bool</td><td>Do you need an entitlement to use this pack?</td></tr></tbody></table></td></tr>
+<tr><td>Pack Type</td><td><table><tbody><tr><td>byte</td><td><a href="../enums/PackType.html">PackType</a></td></tr></tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

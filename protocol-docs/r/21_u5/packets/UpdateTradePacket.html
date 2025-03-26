@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UpdateTradePacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="updatetradepacket">UpdateTradePacket</h1>
+<p><strong>ID: 80</strong></p>
+<p>This is used when the player trades with an npc. This sends all of the updated trade info in one big ol' packet.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Container Id</td><td>byte</td></tr>
+<tr><td>Type</td><td>byte</td></tr>
+<tr><td>Size</td><td>varint</td></tr>
+<tr><td>Trader Tier</td><td>varint</td></tr>
+<tr><td>Entity Unique ID</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+<tr><td>Last Trading Player ID</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+<tr><td>Display Name</td><td>string</td></tr>
+<tr><td>Use New Trade Screen</td><td>bool</td></tr>
+<tr><td>Using Economy Trade</td><td>bool</td></tr>
+<tr><td>Data Tags</td><td><a href="../types/CompoundTag.html">CompoundTag</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CraftingDataPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="craftingdatapacket">CraftingDataPacket</h1>
+<p><strong>ID: 52</strong></p>
+<p>Sent from the server on level startup to send all recipes to the client. As of this writing it's a ~150k packet.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Crafting Entries</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Crafting Entry</td><td><a href="../types/CraftingDataEntry.html">CraftingDataEntry</a></td></tr>
+  </tbody></table></td></tr>
+<tr><td>Potion Mixes</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Potion Mix Entry</td><td><a href="../types/PotionMixDataEntry.html">PotionMixDataEntry</a></td></tr>
+  </tbody></table></td></tr>
+<tr><td>Container Mixes</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Container Mix Entry</td><td><a href="../types/ContainerMixDataEntry.html">ContainerMixDataEntry</a></td></tr>
+  </tbody></table></td></tr>
+<tr><td>Material Reducers</td><td><b>Array Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Material Reducer Entry</td><td><a href="../types/MaterialReducerDataEntry.html">MaterialReducerDataEntry</a></td></tr>
+  </tbody></table></td></tr>
+<tr><td>Clear Recipes</td><td>bool</td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BlockEventPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="blockeventpacket">BlockEventPacket</h1>
+<p><strong>ID: 26</strong></p>
+<p>Whenever a block event happens it is sent from the server to sync client and server, with arbitrarily encoded information in b0 and b1.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Block Position</td><td><a href="../types/NetworkBlockPosition.html">NetworkBlockPosition</a></td></tr>
+<tr><td>Event Type</td><td>varint</td></tr>
+<tr><td>Event Value</td><td>varint</td></tr>
+</tbody></table>
+</body>
+</html>
