@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PlayerLocationPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="playerlocationpacket">PlayerLocationPacket</h1>
+<p><strong>ID: 326</strong></p>
+<p>Updates the client with the position of a player in the same dimension outside of simulation distance, or whether to hide a player.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Packet Type</td><td>int</td></tr>
+<tr><td>Dependency on 'Server Location Packet Type'</td><td><b>PlayerLocationCoordinates</b><br>
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Target Actor ID</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+  <tr><td>Position</td><td><a href="../types/Vec3.html">Vec3</a></td></tr>
+  </tbody></table><hr>
+  <b>PlayerLocationHide</b><br>
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Target Actor ID</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>

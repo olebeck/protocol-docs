@@ -96,7 +96,7 @@ def main():
     need_update = get_need_update(converted, mojang_heads)
     for (branch_name, git_hash) in need_update:
         output_dir = os.path.join(OUTPUT_DIR, branch_name)
-        checkout_branch("bedrock-protocol-docs", branch_name)
+        checkout_branch("bedrock-protocol-docs", "origin/"+branch_name)
         try:
             subprocess.run(["java", "-jar", PROTOCOL_JAR, "-i", INPUT_DIR, "-o", output_dir], check=True)
         except Exception as e:

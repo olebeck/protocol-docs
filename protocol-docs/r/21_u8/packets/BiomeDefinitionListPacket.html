@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BiomeDefinitionListPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="biomedefinitionlistpacket">BiomeDefinitionListPacket</h1>
+<p><strong>ID: 122</strong></p>
+<p>On world start, send clients the info for all available biomes.Sends the whole list of the biomes from server to the client at the start of the game from _sendLevelData()</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Map of Biome names to data</td><td><b>Map Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>String Index to Biome name</td><td><a href="../types/short.html">short</a></td></tr>
+  <tr><td>Biome Definition Data</td><td><a href="../types/BiomeDefinitionData.html">BiomeDefinitionData</a></td></tr>
+  </tbody></table></td></tr>
+<tr><td>String list</td><td><a href="../types/BiomeStringList.html">BiomeStringList</a></td></tr>
+</tbody></table>
+</body>
+</html>

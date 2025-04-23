@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>AddActorPacket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../../main.css'>
+</head>
+<body>
+    <h1 id="addactorpacket">AddActorPacket</h1>
+<p><strong>ID: 13</strong></p>
+<p>Newly created entities on server use AddActorPacket to notify clients that they exist.</p>
+<table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+<tr><td>Target Actor ID</td><td><a href="../types/ActorUniqueID.html">ActorUniqueID</a></td></tr>
+<tr><td>Target Runtime ID</td><td><a href="../types/ActorRuntimeID.html">ActorRuntimeID</a></td></tr>
+<tr><td>Actor Type</td><td>string</td></tr>
+<tr><td>Position</td><td><a href="../types/Vec3.html">Vec3</a></td></tr>
+<tr><td>Velocity</td><td><a href="../types/Vec3.html">Vec3</a></td></tr>
+<tr><td>Rotation</td><td><a href="../types/Vec2.html">Vec2</a></td></tr>
+<tr><td>Y Head Rotation</td><td>float</td></tr>
+<tr><td>Y Body Rotation</td><td>float</td></tr>
+<tr><td>Attributes List</td><td><b>List Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Attribute Name</td><td>string</td></tr>
+  <tr><td>Min Value</td><td>float</td></tr>
+  <tr><td>Current Value</td><td>float</td></tr>
+  <tr><td>Max Value</td><td>float</td></tr>
+  </tbody></table></td></tr>
+<tr><td>Actor Data</td><td><a href="../types/DataItem[].html">std::vector&lt;class std::unique_ptr&lt;class DataItem,struct std::default_delete&lt;class DataItem&gt; &gt;,class std::allocator&lt;class std::unique_ptr&lt;class DataItem,struct std::default_delete&lt;class DataItem&gt; &gt; &gt; &gt;</a></td></tr>
+<tr><td>Synched Properties</td><td><a href="../types/PropertySyncData.html">PropertySyncData</a></td></tr>
+<tr><td>Actor Links</td><td><b>List Size:</b> unsigned varint
+  <table><thead><tr><th>Field</th><th>Info</th></tr></thead><tbody>
+  <tr><td>Link</td><td><a href="../types/ActorLink.html">ActorLink</a></td></tr>
+  </tbody></table></td></tr>
+</tbody></table>
+</body>
+</html>
